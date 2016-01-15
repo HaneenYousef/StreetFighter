@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StreetFighter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_characters">Characters</string>
+    <string name="title_activity_street_fighter">StreetFighter</string>
+    <string name="textview">TextView</string>
+    <string name="title_activity_select_fighters">SelectFighters</string>
+    <string name="title_activity_select_arena">SelectArena</string>
+    <string name="title_activity_about_me">AboutMe</string>
+    <string name="street">" a series of fighting games developed in Japan. The game's playable characters originate from around the world,each with his or her own unique fighting style."</string>
+
+</resources>

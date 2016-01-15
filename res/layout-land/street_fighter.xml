@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StreetFighter" 
+    android:id="@+id/streetfighter" >
+
+    <ProgressBar
+        android:id="@+id/fighter1_progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="190dp"
+        android:layout_height="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/timer"
+        android:layout_alignTop="@+id/fighter2_progressBar"
+        android:layout_marginLeft="18dp"
+        android:max="50" />
+
+    <ProgressBar
+        android:id="@+id/fighter2_progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="190dp"
+        android:layout_height="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="45dp"
+        android:max="50"
+        android:layout_toLeftOf="@+id/timer"
+ 		/>
+
+    <ImageView
+        android:id="@+id/sound"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/exit"
+        android:src="@drawable/sound" />
+
+    <TextView
+        android:id="@+id/fighter1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fighter2_name"
+        android:layout_alignBottom="@+id/fighter2_name"
+        android:layout_alignLeft="@+id/fighter1_progressBar"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#000000" />
+
+    <ImageView
+        android:id="@+id/fighter1"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignRight="@+id/fighter1_progressBar"
+        android:layout_below="@+id/fighter1_name"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/bison2"
+        android:background="@drawable/fighter_shape" />
+
+    <ImageView
+        android:id="@+id/fighter2"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/fighter2_progressBar"
+        android:layout_alignTop="@+id/fighter1"
+        android:background="@drawable/fighter_shape"
+        android:src="@drawable/bison2" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/sound"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:text="30"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center" />
+
+    <GridView
+        android:id="@+id/gridf1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/fighter1_name"
+        android:layout_alignLeft="@+id/fighter1_name"
+        android:horizontalSpacing="1dp"
+        android:numColumns="5" >
+    </GridView>
+
+    <GridView
+        android:id="@+id/gridf2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/fighter2_progressBar"
+        android:layout_below="@+id/fighter2_progressBar"
+        android:columnWidth="40dp"
+        android:numColumns="5" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/fighter2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gridf2"
+        android:layout_below="@+id/gridf2"
+        android:background="#000000"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ 
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/fighter2_progressBar"
+        android:src="@drawable/x" />
+
+    <ImageView
+        android:id="@+id/pause"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fighter2"
+        android:src="@drawable/pause" />
+
+    <TextView
+        android:id="@+id/winnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fighter1_name"
+        android:layout_alignBottom="@+id/fighter1_name"
+        android:layout_toRightOf="@+id/gridf1"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/one"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/winnerName"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

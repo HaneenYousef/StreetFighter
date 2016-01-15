@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".SelectFighters" >
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/character_shape"
+        android:numColumns="5" >
+
+    </GridView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/next_selector" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/select_two_fighters" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView6"
+        android:src="@drawable/vs" />
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/gridView1"
+        android:layout_alignRight="@+id/imageView2"
+        android:src="@drawable/x_selector" />
+
+    <ImageView
+        android:id="@+id/sound"
+        android:layout_width="40dp"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/exit"
+        android:src="@drawable/sound" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="@drawable/fighter_shape"
+        android:src="@drawable/bison" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:background="@drawable/fighter_shape"
+        android:src="@drawable/blanka" />
+
+</RelativeLayout>
